@@ -1,5 +1,6 @@
 import './App.scss';
 //import NavBar from './components/NavBar/NavBar';
+import CardList from './containers/CardList/CardList';
 
 const App = () => {
   return (
@@ -7,6 +8,7 @@ const App = () => {
       <nav className="nav">
 
       </nav>
+      <CardList />
     </div>
   );
 }
