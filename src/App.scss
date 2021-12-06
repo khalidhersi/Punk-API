@@ -1,0 +1,15 @@
+* {
+  box-sizing: border-box;
+}
+
+.App {
+  text-align: center;
+  .nav-menu{
+    width: 30vmin;
+    background-color: rgb(160, 248, 248);
+    height: 100vmax;
+    border: 3px solid black;
+    display: flex;
+    padding: 1%;
+  }
+}
