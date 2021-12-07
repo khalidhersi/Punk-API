@@ -1,22 +1,57 @@
+@use "../../assets/sass/_variables.scss" as *;
 
-  .nav-bar{
-    width: 30vmin;
-    background-color: rgb(160, 248, 248);
-    height: 100vmax;
-    border: 3px solid black;
+.nav-bar {
+  background-color: $color-secondary;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 5;
+
+  &__content {
+    height: 100%;
     display: flex;
-    padding: 1%;
-    
-.search-box {
-    width: 25vmin;
-    height: 30px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__cross {
+    position: absolute;
+    top: 20px;
+    right: 50px;
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
+
+  &__item {
     font-size: 30px;
-    position: relative;
-    top: 10px;
+    text-decoration: none;
+    color: $color-black;
+    padding: 20px;
+  }
 }
 
-.nav-bar__cross{
-    position: relative;
-    left: 11vmin;
-}
+@media screen and (min-width: 992px) {
+  .nav-bar {
+    background-color: rgba($color-black, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &__content {
+      position: relative;
+      background: linear-gradient(120deg, #ffab5d 30%, #ffde49 100%, #9dc500 100%);
+      width: 30%;
+      height: 30vw;
+      border-radius: 15px;
+    }
+
+    &__cross {
+      right: 20px;
+    }
   }
+}
