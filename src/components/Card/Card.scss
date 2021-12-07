@@ -1,0 +1,44 @@
+.beer-container{
+    width: 100%;
+  .beer-container__info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 10px solid rgb(255, 67, 5);
+    width: 400px;
+    margin: 30px;
+    background: linear-gradient(120deg, #ffab5d 30%, #ffde49 100%, #9dc500 100%);
+    border-radius: 90px;
+
+    .beer-container__description {
+      padding: 10px;
+      font-size: 24px;
+
+      }
+    .beer-container__firstBrewe {
+      }
+      .beer-container__name {
+        text-decoration: underline;
+        font-size: 1.5em;
+        padding: 5px;
+        margin: 0;
+        }
+
+      .mid {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        .beer-image{
+          width: 100px;
+          height: 329px;
+        }
+        .beer-container__tagline {
+          border: 5px dashed rgb(255, 67, 54);
+          text-align: center;
+          width: 45%;
+          font-size: 85%;
+          padding: 20px;
+        } 
+      }
+    }
+  }

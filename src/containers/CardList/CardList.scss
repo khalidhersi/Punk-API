@@ -1,0 +1,10 @@
+.beer-item{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .beer-item >*{
+  flex: 1 2 100px;
+  }
+
