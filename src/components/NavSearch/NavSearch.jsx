@@ -12,8 +12,7 @@ const NavSearch = () => {
         <input className="search-box" placeholder="Search.." ></input>
     </form>
   );
-};
-
+};   
 
 
 export default NavSearch;
