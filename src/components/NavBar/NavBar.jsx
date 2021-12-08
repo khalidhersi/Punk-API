@@ -7,11 +7,6 @@ import blackCross from "../../assets/images/black-cross.png";
 const NavBar = props => {
   const { toggleNav } = props;
 
-const serachJSX = () => {
-  return (
-    <input className="search-box" placeholder="Search.."></input>
-  )
-} 
 
   return (
     <div className="nav-bar">
